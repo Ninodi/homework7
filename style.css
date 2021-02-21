@@ -7,6 +7,7 @@
 body{
     overflow: hidden;
     background-color: skyblue;
+    animation: sky 12s linear infinite normal;
 }
 
 .entire_flower{
@@ -121,7 +122,7 @@ body{
     /* border: 2px solid black; */
     position: relative;
     transform: scale(0.8);
-    animation: sun 10s linear infinite normal;
+    animation: sun 12s linear infinite normal;
     left: -100px;
     bottom: 100px;
 }
@@ -268,7 +269,34 @@ body{
     transform: rotate(-100deg);
     right: 0%;
     top: 0%;
-    animation: birds 15s linear infinite normal;
+    animation: birds 12s linear infinite normal;
+}
+
+.moon{
+    width: 100px;
+    height: 100PX;
+    border-radius: 50%;
+    background-color: silver;
+    position: absolute;
+    z-index: -1;
+    bottom: 80%;
+    left: 50%;
+    animation: moon 12s linear infinite normal;
+}
+
+@keyframes moon{
+    0%{
+        opacity: 0%;
+    }
+    70%{
+        opacity:  0%;
+    }
+    99%{
+        opacity: 40%;
+    }
+    100%{
+        opacity: 100%;
+    }
 }
 
 @keyframes birds{
@@ -389,5 +417,20 @@ body{
     100%{
         right: 85%;
         top: 0px;
+    }
+}
+
+@keyframes sky{
+    0%{
+        background-color: skyblue;
+    }
+    70%{
+        background-color: steelblue;
+    }
+    80%{
+        background-color: royalblue;
+    }
+    100%{
+        background-color: midnightblue;
     }
 }
