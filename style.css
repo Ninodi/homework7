@@ -1,0 +1,393 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    background-color: skyblue;
+}
+
+.entire_flower{
+    height: 350px;
+    width: 250px;
+    /* border: 2px solid black; */
+    position: relative;
+    z-index: 1;
+    transform: scale(0.8);
+    bottom: -250px;
+    left: 20%;
+}
+
+.flower{
+    width: 150px;
+    height: 150px;
+    /* border: 2px solid black; */
+    position: relative;
+    left: 45px;
+    animation: flower 10s linear infinite normal;
+}
+
+.petal{
+    width: 50px;
+    height: 50px;
+    border: 2px solid orchid;
+    border-radius: 50%;
+    background-color: violet;
+    position: absolute;
+}
+
+.petal1{
+    border-bottom: transparent;
+    top: 15px;
+    left: 45px;
+}
+
+.petal2{
+    border-right: transparent;
+    top: 45px;
+    left: 15px;
+}
+
+.petal3{
+    border-left: transparent;
+    top: 47px;
+    right: 19px;
+}
+
+.petal4{
+    border-top: transparent;
+    bottom: 19px;
+    left: 47px;
+}
+
+.petal5{
+    width: 35px;
+    height: 35px;
+    background-color:yellow;
+    top: 55px;
+    left: 55px;
+}
+
+.flower_bottom{
+    height: 250px;
+    width: 200px;
+    /* border: 2px solid black; */
+    position: relative;
+    left: 20px;
+    bottom: 60px;
+}
+
+.stem{
+    width: 50px;
+    height: 250px;
+    border: 6px solid #A0DE21;
+    border-radius: 60%;
+    border-right-color: transparent;
+    position: absolute;
+    z-index: -1;
+    bottom: 0px;
+    left: 40%;
+}
+
+.leaf1{
+    width: 60px; 
+    height: 60px;
+    background-color: #A0DE21; 
+    border: 1px solid green;
+    border-radius: 100px 0px;
+    position: absolute;
+    left: 42%;
+    top: 25%;
+    animation: leaf1 2s linear infinite alternate;
+}
+
+.leaf2{
+    width: 60px; 
+    height: 60px;
+    background-color: #A0DE21; 
+    border: 1px solid green;
+    border-radius: 0px 100px;
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    animation: leaf2 2s linear infinite alternate;
+}
+
+.sun{
+    width: 200px;
+    height: 200px;
+    /* border: 2px solid black; */
+    position: relative;
+    transform: scale(0.8);
+    animation: sun 10s linear infinite normal;
+    left: -100px;
+    bottom: 100px;
+}
+
+.round{
+    width: 60px;
+    height: 60px;
+    background-color: yellow;
+    border-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 70px;
+    left: 63px;
+}
+
+.sunray{
+    height: 4px;
+    width: 55px;
+    background-color: yellow;
+    border-color: yellow;
+    /* padding: 1px; */
+    position: absolute;
+}
+
+.ray1{
+    top: 50%;
+    left: 1%;
+}
+.ray2{
+    top: 50%;
+    right: 6%;
+}
+
+.ray3{
+    top: 15%;
+    left: 33%;
+    transform: rotate(90deg);
+}
+
+.ray4{
+    top: 28%;
+    left: 8%;
+    transform: rotate(45deg);
+}
+
+.ray5{
+    top: 28%;
+    right: 15%;
+    transform: rotate(-45deg);
+}
+.ray6{
+    bottom: 15%;
+    left: 33%;
+    transform: rotate(90deg);
+}
+
+.ray7{
+    bottom: 25%;
+    left: 8%;
+    transform: rotate(-45deg);
+}
+
+.ray8{
+    bottom: 25%;
+    right: 15%;
+    transform: rotate(45deg);
+}
+
+.clouds{
+    width: 215px;
+    height: 150px;
+    /* border: 2px solid black; */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    animation: clouds 15s linear infinite alternate;
+}
+
+.cloud{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border-color: white ;
+    background-color: white;
+    position: absolute;
+}
+
+.cl1{
+    top: 30px;
+}
+
+.cl2{
+    left: 50px;
+}
+
+.cl3{
+    top: 10px;
+    left: 100px;
+}
+
+.cl4{
+    top: 45px;
+    left: 130px;
+}
+
+.cl5{
+    bottom: 3px;
+    left: 60px;
+}
+
+.mountain{
+    width: 500px;
+    height: 500px;
+}
+
+.first_pic, .sec_pic{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+}
+.first_pic{
+    bottom: -30%;
+    left: -13%;
+}
+
+.sec_pic{
+    right: -80px;
+    bottom: -40%;
+}
+
+.grass{
+    width: 100%;
+    height: 200px;
+    background-color:limegreen;
+    position: absolute;
+    z-index: -1;
+    bottom: 0%;
+}
+
+.birds{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    transform: rotate(-100deg);
+    right: 0%;
+    top: 0%;
+    animation: birds 15s linear infinite normal;
+}
+
+@keyframes birds{
+    0%{
+        right: 0%;
+        top: 0%;
+        transform: rotate(-100deg) scale(0.4);
+    }
+
+    10%{
+        transform: rotate(-100deg) scale(o.8);
+    }
+    20%{
+        right: 25%;
+        top: 50%;
+        transform: rotate(-80deg) scale(1);
+    }
+    30%{
+        transform: rotate(-60deg);
+
+    }
+    32%{
+        transform: rotate(-30deg);
+    }
+    35%{
+        transform: rotate(10deg);
+    }
+    40%{
+        right: 50%;
+        top: 55%;
+        z-index: 2;
+        transform: rotate(25deg) scale(1);
+    }
+
+    50%{
+        top: 15%;
+        z-index: -1;
+        transform: rotate(40deg) rotateX(50deg) scale(0.6);
+    }
+    60%{
+        z-index: -1;
+        transform: rotate(-50deg) rotateX(50deg) scale(0.5);
+    }
+    100%{
+        right: 100%;
+        top: 40%;
+        z-index: -1;
+        transform: scale(0.3);
+    }
+}
+@keyframes flower{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes leaf1{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(10deg);
+    }
+
+}
+
+@keyframes leaf2{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-10deg);
+    }
+}
+
+@keyframes sun{
+    0%{
+        left: -100px;
+        bottom: 100px;
+        transform: rotate(0deg) scale(0.8); 
+    }
+    25%{
+        left: 100px;
+        bottom: 300px;
+    }
+    50%{
+        left: 300px;
+        bottom: 400px;
+    }
+    75%{
+        left: 700px;
+        bottom: 400px;
+    }
+    100%{
+        left: 100%;
+        bottom: 100px;
+        transform: rotate(360deg) scale(0.8);
+    }
+}
+
+@keyframes clouds{
+    0%{
+        right: 0px;
+        top: 0px;
+    }
+    25%{
+        right: 25%;
+    }
+    50%{
+        right: 50%;
+    }
+    75%{
+        right: 75%;
+    }
+    100%{
+        right: 85%;
+        top: 0px;
+    }
+}
