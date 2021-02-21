@@ -338,7 +338,7 @@ body{
     }
     60%{
         z-index: -1;
-        transform: rotate(-20deg) rotateX(50deg) scale(0.5);
+        transform: rotate(-10deg) rotateX(50deg) scale(0.5);
     }
     70%{
         transform: rotate(0deg) scale(0.5);
